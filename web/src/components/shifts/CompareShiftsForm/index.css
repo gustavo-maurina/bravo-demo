@@ -1,0 +1,9 @@
+.compare-shifts-form-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 3px solid black;
+  margin-bottom: 2rem;
+  padding: 0.5rem 0.5rem;
+  line-height: 0.5rem;
+}
