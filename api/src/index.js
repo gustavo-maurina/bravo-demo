@@ -7,6 +7,7 @@ import { queriesController } from "./modules/queries/queries.controller.js";
 
 dotenv.config();
 export const app = express();
+const API_PORT = 8080;
 
 /* CONFIG */
 app.use(cors({ origin: "*" }));
@@ -23,6 +24,6 @@ app.use((err, req, res, next) => {
 })
 
 /* START SERVER */
-app.listen(process.env.API_PORT, () => {
-  console.info(`API is running on port ${process.env.API_PORT}`);
+app.listen(API_PORT, () => {
+  console.info(`API is running on port ${API_PORT}`);
 });
